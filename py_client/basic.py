@@ -7,8 +7,8 @@ import requests
 
 endpoint = "http://localhost:8000/api/"
 
-get_response = requests.get(endpoint, params={'abc': 123}, json={
-                            "query": "Hello world"})  # HTTP Request
+get_response = requests.post(endpoint, params={'abc': 123}, json={
+    "content": 'Hello'})  # HTTP Request
 # print(get_response.text)  # print raw source code as raw text
 
 # HTTP Request -> HTML
